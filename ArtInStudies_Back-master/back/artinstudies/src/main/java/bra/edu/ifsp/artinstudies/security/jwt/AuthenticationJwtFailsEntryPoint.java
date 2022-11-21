@@ -1,4 +1,4 @@
-package br.edu.ifsp.login_spring.security.jwt;
+package bra.edu.ifsp.artinstudies.security.jwt;
 
 import java.io.IOException;
 import java.util.HashMap;

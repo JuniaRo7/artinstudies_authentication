@@ -12,7 +12,7 @@ public class UserDetailsImpl implements UserDetails{
     private String password;
 
     public UserDetailsImpl(Usuario user){
-        this.username = user.getNome();
+        this.username = user.getUsername();
         this.password = user.getSenha();
     }
 

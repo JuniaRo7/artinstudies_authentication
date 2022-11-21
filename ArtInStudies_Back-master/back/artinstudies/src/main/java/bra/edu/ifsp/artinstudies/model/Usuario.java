@@ -19,7 +19,7 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String nome, email, senha, data_cadastro;
+    private String username, nome, email, senha, data_cadastro;
 
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "fk_usuario")
@@ -77,6 +77,30 @@ public class Usuario {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public List<Conteudo> getConteudos() {
+        return conteudos;
+    }
+
+    public void setConteudos(List<Conteudo> conteudos) {
+        this.conteudos = conteudos;
+    }
+
+    public Perfil getPerfil() {
+        return perfil;
+    }
+
+    public void setPerfil(Perfil perfil) {
+        this.perfil = perfil;
     }
 
 }
